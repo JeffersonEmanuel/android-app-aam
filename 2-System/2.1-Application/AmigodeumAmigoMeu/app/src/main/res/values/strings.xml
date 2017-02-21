@@ -3,6 +3,17 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+
+    <!-- MENU -->
+    <string name="menu_item_feed">Feed</string>
+    <string name="menu_item_friend">Amigos</string>
+    <string name="menu_item_logout">Sair</string>
+    <string name="menu_item_events">Eventos</string>
+    <string name="menu_item_notifications">Notificações</string>
+    <string name="menu_item_account">Conta</string>
+    <string name="menu_item_user">Usuário</string>
+
+
+
 </resources>
