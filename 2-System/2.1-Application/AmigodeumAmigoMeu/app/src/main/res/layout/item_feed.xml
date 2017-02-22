@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    >
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="6dp"
+        android:text="Joaquim Maia"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/ivUserIcon"
+        android:layout_toRightOf="@+id/ivUserIcon"
+        android:layout_toEndOf="@+id/ivUserIcon"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="6dp"
+        android:text="Posted"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/tvName"
+        android:layout_toRightOf="@+id/ivUserIcon"
+        android:layout_toEndOf="@+id/ivUserIcon"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/ivUserIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_recent_history"
+        android:id="@+id/imageView7"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_alignTop="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="6dp"
+        android:text="3h"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/tvName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/ivUserIcon"
+        android:layout_alignStart="@+id/ivUserIcon"
+        android:layout_marginTop="11dp"
+        android:id="@+id/imageView8"
+        android:layout_alignRight="@+id/ivUserIcon"
+        android:layout_alignEnd="@+id/ivUserIcon" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_menu_share"
+        android:id="@+id/imageView10"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?android:attr/alertDialogIcon"
+        android:id="@+id/imageView9"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/eu"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
