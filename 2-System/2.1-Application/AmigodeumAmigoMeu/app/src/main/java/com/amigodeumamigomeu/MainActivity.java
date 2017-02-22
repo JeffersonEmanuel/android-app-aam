@@ -1,5 +1,7 @@
 package com.amigodeumamigomeu;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override
@@ -77,20 +83,46 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
 
-        if (id == R.id.nav_feed) {
-            // Handle the camera action
-        } else if (id == R.id.nav_event) {
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment fragment;
 
-        } else if (id == R.id.nav_friends) {
+        switch (item.getItemId()) {
 
-        } else if (id == R.id.nav_notifications) {
+            case R.id.nav_feed:
+                fragment = new FragmentFeed();
+                ft.addToBackStack(null);
+                ft.replace(R.id.content_main, fragment).commit();
+                break;
 
-        } else if (id == R.id.nav_account) {
+            case R.id.nav_event:
+                fragment = new FragmentEvents();
+                ft.addToBackStack(null);
+                ft.replace(R.id.content_main, fragment).commit();
+                break;
 
-        } else if (id == R.id.nav_logout) {
+            case R.id.nav_friends:
+                fragment = new FragmentFriends();
+                ft.addToBackStack(null);
+                ft.replace(R.id.content_main, fragment).commit();
+                break;
+
+            case R.id.nav_notifications:
+                fragment = new FragmentNotifications();
+                ft.addToBackStack(null);
+                ft.replace(R.id.content_main, fragment).commit();
+                break;
+
+            case R.id.nav_account:
+                fragment = new FragmentAccount();
+                ft.addToBackStack(null);
+                ft.replace(R.id.content_main, fragment).commit();
+                break;
+
+
+            case R.id.nav_logout:
+                break;
+
 
         }
 
