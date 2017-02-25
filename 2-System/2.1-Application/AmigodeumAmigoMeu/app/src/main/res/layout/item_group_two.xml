@@ -1,51 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    >
+    android:padding="4dp"
+    android:weightSum="1">
 
 
-    <TextView
-        android:id="@+id/tvSubTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alguem afim de sair para beber?"
-        android:layout_below="@+id/tvTitle"
-        android:layout_alignLeft="@+id/tvTitle"
-        android:layout_alignStart="@+id/tvTitle" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image2"
-        android:layout_width="30dp"
-        android:layout_gravity="center"
-        android:layout_height="30dp"
-        android:src="@drawable/eu"
-        android:layout_alignTop="@+id/profile_image"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="30dp"
-        android:layout_gravity="center"
-        android:layout_height="30dp"
-        android:src="@drawable/eu"
-        android:layout_marginTop="16dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/profile_image2"
-        android:layout_toEndOf="@+id/profile_image2" />
-
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Simbora tomar uma  até a"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="14sp"
-        android:layout_alignTop="@+id/profile_image"
-        android:layout_toRightOf="@+id/profile_image"
-        android:layout_toEndOf="@+id/profile_image" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="67dp"
+        android:layout_height="54dp">
 
 
-</RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image2"
+            android:layout_width="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_height="25dp"
+            android:src="@drawable/eu"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/eu"
+            android:layout_marginLeft="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simbora tomar uma  até a"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+
+            />
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alguem afim de sair para beber?"
+
+            />
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
