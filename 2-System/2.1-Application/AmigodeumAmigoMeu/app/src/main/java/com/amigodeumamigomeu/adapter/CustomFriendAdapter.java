@@ -31,7 +31,7 @@ public class CustomFriendAdapter extends ArrayAdapter<Friend> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_friend, parent, false);
         }
         // Lookup view for data population
-        TextView tvCity = (TextView) convertView.findViewById(R.id.tvCity);
+        TextView tvCity = (TextView) convertView.findViewById(R.id.tvTitle);
         TextView tvName = (TextView) convertView.findViewById(R.id.tvName);
 
         // Populate the data into the template view using the data object

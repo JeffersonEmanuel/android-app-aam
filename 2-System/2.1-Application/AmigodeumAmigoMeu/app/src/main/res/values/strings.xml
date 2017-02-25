@@ -7,6 +7,7 @@
 
     <!-- MENU -->
     <string name="menu_item_feed">Feed</string>
+    <string name="menu_item_group">Grupos</string>
     <string name="menu_item_friend">Amigos</string>
     <string name="menu_item_logout">Sair</string>
     <string name="menu_item_events">Eventos</string>

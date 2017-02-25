@@ -6,7 +6,7 @@
     >
 
     <TextView
-        android:id="@+id/tvFrom"
+        android:id="@+id/tvSubTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/tvName"
@@ -15,11 +15,11 @@
         android:text="@string/item_friend_tv_from" />
 
     <TextView
-        android:id="@+id/tvCity"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tvName"
-        android:layout_toRightOf="@+id/tvFrom"
+        android:layout_toRightOf="@+id/tvSubTitle"
         android:text="Campina Grande"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

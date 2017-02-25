@@ -20,6 +20,7 @@ import com.amigodeumamigomeu.fragment.FragmentAccount;
 import com.amigodeumamigomeu.fragment.FragmentEvents;
 import com.amigodeumamigomeu.fragment.FragmentFeed;
 import com.amigodeumamigomeu.fragment.FragmentFriends;
+import com.amigodeumamigomeu.fragment.FragmentGroup;
 import com.amigodeumamigomeu.fragment.FragmentNotifications;
 
 public class MainActivity extends AppCompatActivity
@@ -133,6 +134,11 @@ public class MainActivity extends AppCompatActivity
                 ft.replace(R.id.content_main, fragment).commit();
                 break;
 
+            case R.id.nav_group:
+                fragment = new FragmentGroup();
+                ft.addToBackStack(null);
+                ft.replace(R.id.content_main, fragment).commit();
+                break;
 
             case R.id.nav_logout:
                 break;
