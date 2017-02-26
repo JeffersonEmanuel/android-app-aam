@@ -8,8 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.amigodeumamigomeu.R;
-import com.amigodeumamigomeu.entities.Feed;
-import com.amigodeumamigomeu.entities.Group;
+import com.amigodeumamigomeu.entities.Event;
 
 import java.util.ArrayList;
 
@@ -17,26 +16,26 @@ import java.util.ArrayList;
  * Created by angus on 22/02/17.
  */
 
-public class CustomGroupAdapter extends ArrayAdapter<Group> {
+public class CustomEventAdapter extends ArrayAdapter<Event> {
 
-    public CustomGroupAdapter(Context context, ArrayList<Group> group) {
+    public CustomEventAdapter(Context context, ArrayList<Event> group) {
         super(context, 0, group);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get the data item for this position
-        Group group = getItem(position);
+        Event group = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
             if (group.getQtPessoas() == 1){
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_group_one, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_event_one, parent, false);
             } else if (group.getQtPessoas() == 2){
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_group_two, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_event_two, parent, false);
             }else if (group.getQtPessoas() == 3){
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_group_three, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_event_three, parent, false);
             } else{
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_group_four, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_event_four, parent, false);
             }
 
         }

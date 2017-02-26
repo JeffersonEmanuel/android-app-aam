@@ -6,19 +6,19 @@ import java.util.ArrayList;
  * Created by angus on 22/02/17.
  */
 
-public class Group {
+public class Event {
 
     private String title;
     private String subTitle;
     private int qtPessoas;
 
 
-    public Group(String title, String subTitle) {
+    public Event(String title, String subTitle) {
         this.title = title;
         this.subTitle = subTitle;
     }
 
-    public Group(String title, String subTitle, int qtPessoas) {
+    public Event(String title, String subTitle, int qtPessoas) {
         this.title = title;
         this.subTitle = subTitle;
         this.qtPessoas = qtPessoas;
@@ -46,13 +46,13 @@ public class Group {
 
 
     //TO DO Remover isso
-    public static ArrayList<Group> getGroups() {
-        ArrayList<Group> groups = new ArrayList<Group>();
+    public static ArrayList<Event> getGroups() {
+        ArrayList<Event> groups = new ArrayList<Event>();
 
-    groups.add(new Group("Vamo tomar 1"," Alguem quer ir",1));
-    groups.add(new Group("Vamo tomar 2"," Alguem quer ir",2));
-    groups.add(new Group("Vamo tomar 3"," Alguem quer ir",3));
-    groups.add(new Group("Vamo tomar 4"," Alguem quer ir",4));
+    groups.add(new Event("Vamo tomar 1"," Alguem quer ir",1));
+    groups.add(new Event("Vamo tomar 2"," Alguem quer ir",2));
+    groups.add(new Event("Vamo tomar 3"," Alguem quer ir",3));
+    groups.add(new Event("Vamo tomar 4"," Alguem quer ir",4));
         return groups;
     }
 }
